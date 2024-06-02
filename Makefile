@@ -21,3 +21,7 @@ gitignore:
 	echo "static/styles/output.css" >> .gitignore
 	echo "static/scripts/output.js" >> .gitignore
 
+environ:
+	touch core/.env
+	touch core/.env.example
+
