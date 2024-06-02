@@ -22,6 +22,9 @@ gitignore:
 	echo "static/scripts/output.js" >> .gitignore
 
 environ:
-	touch core/.env
-	touch core/.env.example
+	echo "DJANGO_SECRET_KEY=" > core/.env
+	echo "DJANGO_SECRET_KEY=your-secret-key" > core/.env.example
+
+readme:
+	touch README.md
 
